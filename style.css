@@ -1,0 +1,453 @@
+body{
+    box-sizing:border-box;
+    overflow:hidden;
+    font-family: 'Secular One', sans-serif;
+}
+.main{
+    width:100%;
+    height:100vh;
+    border:1px solid black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.main::-webkit-scrollbar {
+    display: none;
+}
+.code-space{
+    width:50%;
+    height:100vh;
+    background-color:#202020;
+    border:1px solid #333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+.navbar{
+    width:50%;
+    height:8vh;
+    background-color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    position:absolute;
+    top:0;
+}
+.tabs{
+    width:25%;
+    height:8vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.tabs .tab-html{
+    width:33.33%;
+    height:5vh;
+    background-color:#202020;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px groove lavender;
+    border-bottom:none;
+    color:lavender;
+    font-weight:bolder;
+    position:relative;
+    top:1.4vh;
+    cursor:pointer;
+    border-radius:0.5rem;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+.tabs .tab-css{
+    width:33.33%;
+    height: 5vh;
+    background-color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px groove transparent;
+    border-bottom:none;
+    color:lavender;
+    font-weight:bolder;
+    position:relative;
+    top:1.4vh;
+    cursor:pointer;
+    border-radius:0.5rem;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+.tabs .tab-js{
+    width:33.33%;
+    height:5vh;
+    background-color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px groove transparent;
+    border-bottom:none;
+    color:lavender;
+    font-weight:bolder;
+    position:relative;
+    top:1.4vh;
+    cursor:pointer;
+    border-radius:0.5rem;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+.heading{
+    position:relative;
+    left:20%;
+    font-size:1.5em;
+    color:dodgerblue;
+    font-weight:bolder;
+}
+.settings{
+    position:relative;
+    left:52%;
+    top:5px;
+    cursor:pointer;
+}
+.html-space{
+    width:50%;
+    height:92vh;
+    background-color:#202020;
+    position:absolute;
+    top:8vh;
+    z-index:2;
+    color:lavender;
+    font-weight:bolder;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.css-space{
+    width:50%;
+    height:92vh;
+    background-color:#202020;
+    position:absolute;
+    top:8vh;
+    z-index:1;
+    color:lavender;
+    font-weight:bolder;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.js-space{
+    width:50%;
+    height:92vh;
+    background-color:#202020;
+    position:absolute;
+    top:8vh;
+    z-index:0;
+    color:lavender;
+    font-weight:bolder;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.html-inner-space{
+    width:97%;
+    height:88vh;
+    background-color:#202020;
+    color:lavender;
+    font-weight:bolder;
+}
+.css-inner-space{
+    width:97%;
+    height:88vh;
+    background-color:#202020;
+    color:lavender;
+    font-weight:bolder;
+}
+.js-inner-space{
+    width:97%;
+    height:88vh;
+    background-color:#202020;
+    color:lavender;
+    font-weight:bolder;
+}
+.settings-tab{
+    width:500px;
+    height:330px;
+    background-color:#333;
+    position:absolute;
+    top:30%;
+    left:8%;
+    z-index:4;
+    border-radius:0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    display:none;
+}
+.close{
+    width:20px;
+    height:20px;
+    background-color:transparent;
+    position:absolute;
+    top:5.5%;
+    left:92%;
+    border-radius:100%;
+    padding:0.2rem;
+    cursor:pointer;
+}
+.close:hover{
+    background-color:gray;
+}
+.settings-label{
+    color:dodgerblue;
+    position:absolute;
+    top:5.5%;
+    font-size:1.4em;
+    font-weight:bolder;
+}
+.color-tab{
+    width:95%;
+    height:auto;
+    background-color:#333;
+    border-bottom:1px solid gray;
+    padding:0.5rem;
+    color:lavender;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    cursor:pointer;
+}
+.font-tab{
+    width:95%;
+    height:auto;
+    background-color:#333;
+    border-bottom:0.5px solid grey;
+    padding:0.5rem;
+    color:lavender;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    cursor:pointer;
+}
+.live-server-tab{
+    width:95%;
+    height:auto;
+    background-color:#333;
+    border-bottom:0.5px solid grey;
+    padding:0.5rem;
+    color:lavender;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    cursor:pointer;
+}
+.premium-tab{
+    width:95%;
+    height:auto;
+    background-color:#333;
+    border-bottom:0.5px solid grey;
+    padding:0.5rem;
+    color:lavender;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:left;
+    cursor:pointer;
+}
+.tab-common:hover{
+    background-color:#202020;
+}
+.color-options{
+    width:auto;
+    background-color:transparent;
+    margin-left:30%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.color-option-1{
+    background-color:#332233;
+    outline:none;
+    border:none;
+    padding:0.4rem;
+    color:lavender;
+}
+.color-option-2{
+    border:none;
+    outline:none;
+}
+.font-options{
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:30%;
+}
+.font-size-option{
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    font-size:0.9em;
+}
+.font-size-option input[type="number"]{
+    width:38px;
+    background-color:#332233;
+    outline:none;
+    border:none;
+    padding:0.4rem;
+    color:lavender;
+    margin:5px;
+}
+.font-family-option{
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    font-size:0.9em;
+    margin-left:10px;
+}
+.font-family-option select{
+    width:80px;
+    background-color:#332233;
+    outline:none;
+    border:none;
+    padding:0.4rem;
+    color:lavender;
+    margin:5px;
+}
+.font-weight-option{
+    width:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    font-size:0.9em;
+    margin-left:10px;
+}
+.font-weight-option select{
+    width:80px;
+    background-color:#332233;
+    outline:none;
+    border:none;
+    padding:0.4rem;
+    color:lavender;
+    margin:5px;
+}
+.switch-toggle{
+    width:auto;
+    position:relative;
+    left:66%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.switch{
+    appearance:none;
+    position:relative;
+    width:42px;
+    height:25px;
+    border-radius:25px;
+    background-color:#ccc;
+    transition:background .3s;
+    outline:none;
+    cursor:pointer;
+}
+.switch::after{
+    content:'';
+    position:absolute;
+    top:49%;
+    left:30%;
+    transform:translate(-50% , -50%);
+    border-radius:50%;
+    height:1rem;
+    width:1rem;
+    background-color:lavenderblush;
+    transition:left .3s;
+}
+.switch:checked{
+    background-color:dodgerblue;
+}
+.switch:checked::after{
+    left:70%;
+}
+.upgrade{
+    padding:0.5rem;
+    background-color:dodgerblue;
+    color:lavender;
+    font-weight:bolder;
+    border-radius:0.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    position:relative;
+    left:57.5%;
+    cursor:pointer;
+}
+.html-inner-space-textarea{
+    width:100%;
+    height:100vh;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    color:lavender;
+}
+.css-inner-space-textarea{
+    width:100%;
+    height:100vh;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    color:lavender;
+}
+.js-inner-space-textarea{
+    width:100%;
+    height:100vh;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    color:lavender;
+}
+.run-space{
+    width:auto;
+    position:absolute;
+    left:80%;
+    top:15px;
+}
+.run{
+    padding:0.5rem;
+    background-color:dodgerblue;
+    border:none;
+    font-weight:bolder;
+    color:lavender;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:0.3rem;
+    cursor:pointer;
+}
+.output-space{
+    width:50%;
+    height:100vh;
+    background-color:lavender;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.output{
+    width:99%;
+    height:99vh;
+    background-color:transparent;
+    border:none;
+    outline:none    ;
+}

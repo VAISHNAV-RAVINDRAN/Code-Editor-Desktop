@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/material-sharp/480/null/source-code.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <div class="code-space">
+        <div class="navbar">
+            <div class="tabs">
+                <div class="tab-html">Html</div>
+                <div class="tab-css">Css</div>
+                <div class="tab-js">Js</div>
+            </div>
+            <div class="heading">Code Editor</div>
+            <div class="run-space">
+                <button class="run"><img src="https://img.icons8.com/ios-glyphs/480/FFFFFF/play--v1.png" width="15px" height="15px"/>&nbsp;Run</button>
+            </div>
+            <div class="settings">
+                <img src="https://img.icons8.com/small/480/FFFFFF/gear.png" class="set" width="25px" height="25px"/>
+            </div>
+        </div>
+        <div class="html-space">
+            <div class="html-inner-space">
+                <textarea class="html-inner-space-textarea">Html Code Here</textarea>
+            </div>        
+        </div>
+        <div class="css-space">
+            <div class="css-inner-space">
+                <textarea class="css-inner-space-textarea">/* Css Code Here */</textarea>
+            </div>     
+        </div>
+        <div class="js-space">
+            <div class="js-inner-space">
+                <textarea class="js-inner-space-textarea">//Js Code Here</textarea>
+            </div>     
+        </div>
+        <div class="settings-tab">
+            <div class="settings-label">Settings</div>
+            <div class="close">
+                <img src="https://img.icons8.com/ios-glyphs/480/FFFFFF/delete-sign.png" width="20px" height="20px"/>
+            </div>
+            <div class="color-tab tab-common"><img src="https://img.icons8.com/color/480/null/rgb-circle-1--v1.png" width="20px" height="20px"/>&nbsp;&nbsp;color
+                <div class="color-options">
+                    <input type="text" class="color-option-1" placeholder="#HexCode">&nbsp;&nbsp;
+                    or&nbsp;&nbsp;
+                    <input type="color" class="color-option-2">&nbsp;&nbsp;
+                </div>
+            </div>
+            <div class="font-tab tab-common"><img src="https://img.icons8.com/color/480/null/choose-font.png" width="20px" height="20px"/>&nbsp;&nbsp;Font
+                <div class="font-options">
+                    <div class="font-size-option">
+                        Font-Size
+                        <input type="number" class="font-size-select">
+                    </div>
+                    <div class="font-family-option">
+                        Font-Family
+                        <select class="font-family-select">
+                            <option value="select" style="font-weight:bolder;">Select</option>
+                            <option value="Arial" style="font-family:Arial;">Arial</option>
+                            <option value="Avanta Garde" style="font-family:Avanta Garde;">Avanta Garde</option>
+                            <option value="Calibri" style="font-family:Calibri;">Calibri</option>
+                            <option value="Candara" style="font-family:Candara;">Candara</option>
+                            <option value="Century Gothic" style="font-family:Century Gothic;">Century Gothic</option>
+                            <option value="cursive" style="font-family:Cursive;">Cursive</option>
+                            <option value="fantasy" style="font-family:Fantasy;">Fantasy</option>
+                            <option value="Franklin Gothic Medium" style="font-family:Franklin Gothic Medium;">Franklin Gothic Medium</option>
+                            <option value="Futara" style="font-family:Futara;">Futara</option>
+                            <option value="Geneva" style="font-family:Geneva;">Geneva</option>
+                            <option value="Gill Sans" style="font-family:Gill Sans;">Gill Sans</option>
+                            <option value="Helvetica" style="font-family:Helvetica;">Helvetica</option>
+                            <option value="Lucida Sans" style="font-family:Lucida Sans;">Lucida Sans</option>
+                            <option value="monospace" style="font-family:Monospace;">Monospace</option>
+                            <option value="Noto" style="font-family:Noto;">Noto</option>
+                            <option value="Optima" style="font-family:Optima;">Optima</option>
+                            <option value="sans-serif" style="font-family:Sans-serif;">Sans-serif</option>
+                            <option value="Segoe UI" style="font-family:Segoe UI;">Segoe UI</option>
+                            <option value="serif" style="font-family:Serif;">Serif</option>
+                            <option value="Times" style="font-family:Times;">Times</option>
+                            <option value="Times New Roman" style="font-family:Times New Roman;">Times New Roman</option>
+                            <option value="Trebuchet MS" style="font-family:Trebuchet MS;">Trebuchet MS</option>
+                            <option value="verdana" style="font-family:Verdana;">Verdana</option>
+                        </select>
+                    </div>
+                    <div class="font-weight-option">
+                        Font-Weight
+                        <select class="font-weight-select">
+                            <option value="select">Select</option>
+                            <option value="lighter" style="font-weight:lighter;">Lighter</option>
+                            <option value="bold" style="font-weight:bold;">Bold</option>
+                            <option value="bolder" style="font-weight:bolder;">Bolder</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="live-server-tab tab-common"><img src="https://img.icons8.com/material-outlined/480/FF0000/youtube-live.png" width="20px" height="20px"/>&nbsp;&nbsp;Live Server
+                <div class="switch-toggle">
+                    <input type="checkbox" class="switch">
+                </div>
+            </div>
+            <div class="premium-tab tab-common"><img src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/480/FFD700/external-premium-design-thinking-tanah-basah-glyph-tanah-basah.png" width="20px" height="20px"/>&nbsp;&nbsp;Premium
+                <button class="upgrade"><img src="https://img.icons8.com/tiny-glyph/480/FFD700/buy-upgrade.png" width="15px" height="15px"/>&nbsp;&nbsp;Upgrade</button>
+            </div>
+        </div>
+    </div>
+    <div class="output-space">
+        <iframe class="output"></iframe>
+    </div>
+</div>
+<script src="script.js"></script>    
+</body>
+</html>
